@@ -1,0 +1,90 @@
+body.admin-body {
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.admin-container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.admin-container h2 {
+  color: #2a5298;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.admin-container form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  text-align: left;
+}
+
+.admin-container label {
+  text-align: left;
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+}
+
+.admin-container input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.admin-container button {
+  padding: 12px;
+  background-color: #2a5298;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.admin-container button:hover {
+  background-color: #1e3c72;
+}
+
+.admin-container p {
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+.admin-container a {
+  color: #2a5298;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-container button {
+  grid-column: span 2;
+  margin-top: 10px;
+}
+@media (max-width: 600px) {
+  .admin-container form {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-container button {
+    grid-column: span 1;
+  }
+}
